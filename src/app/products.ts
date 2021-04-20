@@ -16,6 +16,24 @@ export const products = [
     name: "Maca Peruana",
     price: 29,
     description: ""
+  },
+  {
+    id: 4,
+    name: "Creatina",
+    price: 29,
+    description: ""
+  },
+  {
+    id: 5,
+    name: "Cafeína",
+    price: 29,
+    description: ""
+  },
+  {
+    id: 6,
+    name: "BCAA",
+    price: 29,
+    description: ""
   }
 ];
 
