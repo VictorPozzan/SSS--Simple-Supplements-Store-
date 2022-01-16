@@ -5,7 +5,7 @@ export const products = [
     price: 120,
     description: 'Proteina de sabor morango',
     image:
-      'https://github.com/VictorPozzan/SSS--Simple-Supplements-Store-/tree/master/src/assets/images/whey.png',
+      'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/whey%20(1).png',
   },
   {
     id: 2,
