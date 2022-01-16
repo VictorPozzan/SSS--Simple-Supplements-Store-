@@ -1,7 +1,21 @@
-
-
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license
 */
+
+.card-data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 12px;
+  width: 400px;
+  height: 400px;
+  border-radius: 25px;
+  border: 2px solid #4698e9;
+  padding: 20px;
+}
