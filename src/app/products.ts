@@ -1,40 +1,42 @@
 export const products = [
   {
     id: 1,
-    name: "Whey Protein",
+    name: 'Whey Protein',
     price: 120,
-    description: "Proteina de sabor morango"
+    description: 'Proteina de sabor morango',
+    image:
+      'https://github.com/VictorPozzan/SSS--Simple-Supplements-Store-/tree/master/src/assets/images/whey.png',
   },
   {
     id: 2,
-    name: "Vitaminas",
+    name: 'Vitaminas',
     price: 69,
-    description: "Complexo de vitaminas A, B, C, D e E"
+    description: 'Complexo de vitaminas A, B, C, D e E',
   },
   {
     id: 3,
-    name: "Maca Peruana",
+    name: 'Maca Peruana',
     price: 29,
-    description: ""
+    description: '',
   },
   {
     id: 4,
-    name: "Creatina",
+    name: 'Creatina',
     price: 29,
-    description: ""
+    description: '',
   },
   {
     id: 5,
-    name: "Cafeína",
+    name: 'Cafeína',
     price: 29,
-    description: ""
+    description: '',
   },
   {
     id: 6,
-    name: "BCAA",
+    name: 'BCAA',
     price: 29,
-    description: ""
-  }
+    description: '',
+  },
 ];
 
 /*
