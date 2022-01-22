@@ -19,3 +19,24 @@ can be found in the LICENSE file at https://angular.io/license
   border: 2px solid #4698e9;
   padding: 20px;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.foot-card {
+  display: flex;
+  justify-content: start;
+}
+
+.item-foot {
+  margin: 5px;
+}
+
+#icon-share {
+  padding-right: 20px;
+  color: #f0f0f0;
+}

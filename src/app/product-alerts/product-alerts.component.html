@@ -1,3 +1,6 @@
-<p *ngIf="product.price > 110">
-  <button (click)="notify.emit()"> Notificação  </button>
-</p>
+<div *ngIf="product.price > 110">
+  <button (click)="notify.emit()">
+    <i class="material-icons" id="icon-notifications">notifications </i>
+    Notification
+  </button>
+</div>

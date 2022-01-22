@@ -2,25 +2,26 @@
 
 <div class="card-data">
   <div *ngFor="let product of products" class="card">
-    <h3>
-      <a
-        [title]="product.name + ' detalhes '"
-        [routerLink]="['/products', product.id]"
-      >
-        {{ product.name }}
-      </a>
-    </h3>
-    <p *ngIf="product.description">Descrição: {{ product.description }}</p>
-    <img [src]="product.image" />
-    <button (click)="share()">
-      <i class="material-icons" style="padding-right: 20px; color: #f0f0f0"
-        >share</i
-      >
-      Compartilhar
-    </button>
+    <a
+      [title]="product.name + ' detalhes '"
+      [routerLink]="['/products', product.id]"
+    >
+      {{ product.name }}
+    </a>
 
-    <app-product-alerts [product]="product" (notify)="onNotify()">
-    </app-product-alerts>
+    <img [src]="product.image" class="center" />
+
+    <p *ngIf="product.description">Descrição: {{ product.description }}</p>
+    <div class="foot-card">
+      <button (click)="share()" class="item-foot">
+        <i class="material-icons" id="icon-share">share</i>
+        Share
+      </button>
+      <div class="item-foot">
+        <app-product-alerts [product]="product" (notify)="onNotify()">
+        </app-product-alerts>
+      </div>
+    </div>
   </div>
 </div>
 
