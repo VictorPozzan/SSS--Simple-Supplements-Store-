@@ -1,4 +1,7 @@
 #icon-notifications {
   color: white;
-  margin-right: 20px;
+}
+
+.button-notify {
+  border-radius: 25px;
 }

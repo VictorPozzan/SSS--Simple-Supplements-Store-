@@ -2,20 +2,21 @@
 
 <div class="card-data">
   <div *ngFor="let product of products" class="card">
+    <img [src]="product.image" class="center" />
     <a
       [title]="product.name + ' detalhes '"
       [routerLink]="['/products', product.id]"
     >
       {{ product.name }}
     </a>
-
-    <img [src]="product.image" class="center" />
-
-    <p *ngIf="product.description">Descrição: {{ product.description }}</p>
+    <p *ngIf="product.description">{{ product.description }}</p>
     <div class="foot-card">
+      <b>$ {{ product.price }}</b>
+      <button class="item-foot">
+        <i class="material-icons" id="icon">shopping_cart</i>Add to cart
+      </button>
       <button (click)="share()" class="item-foot">
-        <i class="material-icons" id="icon-share">share</i>
-        Share
+        <i class="material-icons" id="icon">share</i>
       </button>
       <div class="item-foot">
         <app-product-alerts [product]="product" (notify)="onNotify()">
