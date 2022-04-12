@@ -9,6 +9,7 @@ can be found in the LICENSE file at https://angular.io/license
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
@@ -24,7 +25,8 @@ can be found in the LICENSE file at https://angular.io/license
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 75%;
+  width: 65%;
+  height: 65%;
 }
 
 .foot-card {
@@ -39,4 +41,19 @@ can be found in the LICENSE file at https://angular.io/license
 
 #icon {
   color: #f0f0f0;
+}
+
+.productInfo{
+  margin-top: 12px;
+  display: flex;
+  width: 100%;
+}
+
+.productHeader{
+  width: 80%;
+}
+
+.productPrice{
+  width: 20%;
+  text-align: center;
 }

@@ -3,15 +3,21 @@
 <div class="card-data">
   <div *ngFor="let product of products" class="card">
     <img [src]="product.image" class="center" />
-    <a
-      [title]="product.name + ' detalhes '"
-      [routerLink]="['/products', product.id]"
-    >
-      {{ product.name }}
-    </a>
-    <p *ngIf="product.description">{{ product.description }}</p>
+    <div class="productInfo">
+      <div class="productHeader">
+        <a
+          [title]="product.name + ' detalhes '"
+          [routerLink]="['/products', product.id]"
+        >
+          {{ product.name }}
+        </a>
+        <p *ngIf="product.description">{{ product.description }}</p>
+      </div>
+      <div class="productPrice">
+        <b>$ {{ product.price }}</b>
+      </div>
+    </div>
     <div class="foot-card">
-      <b>$ {{ product.price }}</b>
       <button (click)="addToCart(product)" class="item-foot">
         <i class="material-icons" id="icon">shopping_cart</i>Add to cart
       </button>
