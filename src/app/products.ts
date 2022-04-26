@@ -3,39 +3,39 @@ export const products = [
     id: 1,
     name: 'Whey Protein',
     price: 120,
-    description: 'Proteina de sabor morango',
+    description: 'Naturally Flavored Strawberry',
     image:
       'https://github.com/VictorPozzan/SSS--Simple-Supplements-Store-/blob/master/src/assets/images/whey.png?raw=true',
   },
   {
     id: 2,
-    name: 'Vitaminas',
+    name: 'Vitamins',
     price: 69,
-    description: 'Complexo de vitaminas A, B, C, D e E',
+    description: 'Vitamin A, C, D, E and Zinc',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/vitamins.png',
   },
   {
     id: 3,
-    name: 'Maca Peruana',
-    price: 29,
-    description: '',
+    name: 'Maca Root Powder',
+    price: 25.99,
+    description: 'Organic, raw for men and women. From Peru',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/maca_peruana.png',
   },
   {
     id: 4,
-    name: 'Creatina',
-    price: 29,
-    description: '',
+    name: 'Creatine',
+    price: 48.98,
+    description: 'Monohydrate powder, unflavored',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/creatine.png',
   },
   {
     id: 5,
-    name: 'Cafeína',
-    price: 29,
-    description: '',
+    name: 'Caffeine',
+    price: 24.0,
+    description: '200mg per serving (125 Caps)',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/pills-cafeine.png',
   },
@@ -43,7 +43,7 @@ export const products = [
     id: 6,
     name: 'BCAA',
     price: 29,
-    description: '',
+    description: 'support muscle recovery and build muscle ',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/bcaa.png',
   },
