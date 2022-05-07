@@ -6,6 +6,7 @@ export const products = [
     description: 'Naturally Flavored Strawberry',
     image:
       'https://github.com/VictorPozzan/SSS--Simple-Supplements-Store-/blob/master/src/assets/images/whey.png?raw=true',
+    stock: 10,
   },
   {
     id: 2,
@@ -14,6 +15,7 @@ export const products = [
     description: 'Vitamin A, C, D, E and Zinc',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/vitamins.png',
+    stock: 19,
   },
   {
     id: 3,
@@ -22,6 +24,7 @@ export const products = [
     description: 'Organic, raw for men and women. From Peru',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/maca_peruana.png',
+    stock: 20,
   },
   {
     id: 4,
@@ -30,6 +33,7 @@ export const products = [
     description: 'Monohydrate powder, unflavored',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/creatine.png',
+    stock: 13,
   },
   {
     id: 5,
@@ -38,6 +42,7 @@ export const products = [
     description: '200mg per serving (125 Caps)',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/pills-cafeine.png',
+    stock: 3,
   },
   {
     id: 6,
@@ -46,6 +51,7 @@ export const products = [
     description: 'support muscle recovery and build muscle ',
     image:
       'https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/bcaa.png',
+    stock: 0,
   },
 ];
 

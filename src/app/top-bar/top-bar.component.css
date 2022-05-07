@@ -1,5 +1,18 @@
-
-
+.badge {
+  position: absolute;
+  top: 16px;
+  right: 62px;
+  line-height: 1rem;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 1rem;
+  background-color: #ff671c;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  z-index: 1;
+  text-align: center;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
