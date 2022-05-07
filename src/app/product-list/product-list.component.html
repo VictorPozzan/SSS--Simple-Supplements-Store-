@@ -21,9 +21,6 @@
       <button (click)="addToCart(product)" class="item-foot">
         <i class="material-icons" id="icon">shopping_cart</i>Add to cart
       </button>
-      <button (click)="share()" class="item-foot">
-        <i class="material-icons" id="icon">share</i>
-      </button>
       <div class="item-foot">
         <app-product-alerts [product]="product" (notify)="onNotify()">
         </app-product-alerts>

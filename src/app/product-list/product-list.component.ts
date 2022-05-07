@@ -12,12 +12,8 @@ export class ProductListComponent {
 
   constructor(private cartService: CartService) {}
 
-  share() {
-    window.alert('O produto foi compartilhado!!');
-  }
-
   onNotify() {
-    window.alert('Você vai ser notificado quando o produto estiver a venda');
+    window.alert('You will be notified when the product is on sale');
   }
 
   addToCart(product) {
