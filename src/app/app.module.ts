@@ -5,12 +5,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
+import { CartComponent } from './cart/cart.component';
+import { CartService } from './cart.service';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
-import { CartService } from './cart.service';
-import { CartComponent } from './cart/cart.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { HeaderNav } from './header-nav/header-nav.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   imports: [
@@ -31,11 +32,12 @@ import { CartComponent } from './cart/cart.component';
   ],
   declarations: [
     AppComponent,
-    TopBarComponent,
+    CartComponent,
     ProductListComponent,
+    HeaderNav,
     ProductAlertsComponent,
     ProductDetailsComponent,
-    CartComponent,
+    TopBarComponent,
   ],
   bootstrap: [AppComponent],
   providers: [CartService],
