@@ -1,6 +1,6 @@
 .badge {
   position: absolute;
-  top: 16px;
+  top: 40px;
   right: 62px;
   line-height: 1rem;
   height: 1rem;
@@ -11,6 +11,10 @@
   font-size: 0.625rem;
   font-weight: 700;
   z-index: 1;
+  text-align: center;
+}
+
+.titleSSS{
   text-align: center;
 }
 /*
