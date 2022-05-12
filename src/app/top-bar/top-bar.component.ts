@@ -10,7 +10,9 @@ export class TopBarComponent {
   constructor(private cartService: CartService) {}
 
   get numberCart() {
-    return this.cartService.getItems().length;
+    return this.cartService.getItems().length < 9
+      ? this.cartService.getItems().length
+      : '+9';
   }
 }
 
