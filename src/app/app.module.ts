@@ -28,6 +28,10 @@ import { TopBarComponent } from './top-bar/top-bar.component';
         path: 'cart',
         component: CartComponent,
       },
+      {
+        path: 'about-us',
+        component: ProductListComponent,
+      },
     ]),
   ],
   declarations: [
