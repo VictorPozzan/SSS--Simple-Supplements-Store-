@@ -8,6 +8,7 @@
     <div class="productInfo">
       <div class="productHeader">
         <a
+          class="productTitle"
           [title]="product.name + ' detalhes '"
           [routerLink]="['/products', product.id]"
         >
@@ -20,10 +21,12 @@
       </div>
     </div>
     <div class="foot-card">
-      <button (click)="addToCart(product)" class="item-foot">
-        <i class="material-icons" id="icon">shopping_cart</i>Add to cart
-      </button>
-      <div class="item-foot">
+      <div>
+        <button (click)="addToCart(product)" class="item-foot">
+          <i class="material-icons" id="icon">shopping_cart</i>Add to cart
+        </button>
+      </div>
+      <div>
         <app-product-alerts [product]="product" (notify)="onNotify()">
         </app-product-alerts>
       </div>

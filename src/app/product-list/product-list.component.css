@@ -17,13 +17,18 @@ can be found in the LICENSE file at https://angular.io/license
   width: 321px;
   height: 321px;
   border-radius: 25px;
-  border: 2px solid #4698e9;
+  border: 2px solid #0d1519;
   padding: 20px;
 }
 
-.productImage{
+.productTitle {
+  color: #0d1519;
+  font-weight: 600;
+}
+
+.productImage {
   max-width: 280px;
-  max-height:  280px;
+  max-height: 280px;
 }
 
 .center {
@@ -37,29 +42,32 @@ can be found in the LICENSE file at https://angular.io/license
 .foot-card {
   display: flex;
   justify-content: start;
+  margin-top: 4px;
 }
 
 .item-foot {
   border-radius: 25px;
-  margin: 5px;
+  margin-right: 8px;
+  background-color: #03784d;
 }
 
 #icon {
   color: #f0f0f0;
 }
 
-.productInfo{
+.productInfo {
   margin-top: 12px;
   display: flex;
   width: 100%;
   height: 68px;
 }
 
-.productHeader{
+.productHeader {
   width: 80%;
 }
 
-.productPrice{
+.productPrice {
   width: 20%;
   text-align: center;
+  color: #013623;
 }
