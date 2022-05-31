@@ -14,19 +14,24 @@ can be found in the LICENSE file at https://angular.io/license
 
 .card {
   margin: 12px;
-  width: 400px;
-  height: 400px;
+  width: 321px;
+  height: 321px;
   border-radius: 25px;
   border: 2px solid #4698e9;
   padding: 20px;
+}
+
+.productImage{
+  max-width: 280px;
+  max-height:  280px;
 }
 
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
-  height: 65%;
+  width: 55%;
+  height: 55%;
 }
 
 .foot-card {
@@ -47,6 +52,7 @@ can be found in the LICENSE file at https://angular.io/license
   margin-top: 12px;
   display: flex;
   width: 100%;
+  height: 68px;
 }
 
 .productHeader{
