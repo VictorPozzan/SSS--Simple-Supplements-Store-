@@ -12,6 +12,7 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 import { ProductListComponent } from './product-list/product-list.component';
 import { HeaderNav } from './header-nav/header-nav.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   imports: [
@@ -29,8 +30,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
         component: CartComponent,
       },
       {
-        path: 'about-us',
-        component: ProductListComponent,
+        path: 'aboutUs',
+        component: AboutUsComponent,
       },
     ]),
   ],
@@ -42,6 +43,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     ProductAlertsComponent,
     ProductDetailsComponent,
     TopBarComponent,
+    AboutUsComponent,
   ],
   bootstrap: [AppComponent],
   providers: [CartService],
