@@ -13,6 +13,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { HeaderNav } from './header-nav/header-nav.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   imports: [
@@ -33,17 +34,22 @@ import { AboutUsComponent } from './about-us/about-us.component';
         path: 'aboutUs',
         component: AboutUsComponent,
       },
+      {
+        path: 'blog',
+        component: BlogComponent,
+      },
     ]),
   ],
   declarations: [
+    AboutUsComponent,
     AppComponent,
+    BlogComponent,
     CartComponent,
-    ProductListComponent,
     HeaderNav,
     ProductAlertsComponent,
+    ProductListComponent,
     ProductDetailsComponent,
     TopBarComponent,
-    AboutUsComponent,
   ],
   bootstrap: [AppComponent],
   providers: [CartService],
