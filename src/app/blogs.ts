@@ -6,4 +6,11 @@ export const blog = [
     link: '',
     image: '',
   },
+  {
+    title: 'Substitutes for Nutritional Yeast',
+    subTitle: '10 best substitutes for Nutritional Yeast',
+    description: '',
+    link: '',
+    image: '',
+  },
 ];
