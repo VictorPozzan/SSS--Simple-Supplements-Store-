@@ -1,4 +1,4 @@
-export const blog = [
+export const blogs = [
   {
     title: 'Sport Nutrition',
     subTitle: 'Run, swim, bike and play with much more intensity',
