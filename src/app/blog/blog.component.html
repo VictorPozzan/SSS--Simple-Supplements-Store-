@@ -1,5 +1,10 @@
 <div class="session-blog">
-  <div *ngFor="blog; of: blogs">
-    <div class="card-blog"></div>
+  <div *ngFor="let blog of blogs">
+    <div class="card-blog">
+      <div class="title">{{ blog.title }}</div>
+      <div class="subTitle">{{ blog.subTitle }}</div>
+      <div class="description">{{ blog.description }}</div>
+      <button>See More</button>
+    </div>
   </div>
 </div>
