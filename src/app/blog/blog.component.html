@@ -1,10 +1,15 @@
 <div class="session-blog">
   <div *ngFor="let blog of blogs">
     <div class="card-blog">
-      <div class="title">{{ blog.title }}</div>
-      <div class="subTitle">{{ blog.subTitle }}</div>
-      <div class="description">{{ blog.description }}</div>
-      <button>See More</button>
+      <div class="column">
+        <div class="title">{{ blog.title }}</div>
+        <div class="subTitle">{{ blog.subTitle }}</div>
+        <div class="description">{{ blog.description }}</div>
+        <button>See More</button>
+      </div>
+      <div class="column">
+        <img src="blog.image" />
+      </div>
     </div>
   </div>
 </div>
