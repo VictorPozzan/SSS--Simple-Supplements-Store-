@@ -39,10 +39,16 @@
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
   font-weight: 100;
+  margin-bottom: 16px;
 }
 
 .column {
   float: left;
   width: 50%;
   padding: 10px;
+}
+
+img {
+  max-width: 100%;
+  width: 500px;
 }
