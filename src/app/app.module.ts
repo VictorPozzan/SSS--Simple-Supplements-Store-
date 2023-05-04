@@ -20,25 +20,28 @@ import { BlogComponent } from './blog/blog.component';
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
-    RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      {
-        path: 'products/:productId',
-        component: ProductDetailsComponent,
-      },
-      {
-        path: 'cart',
-        component: CartComponent,
-      },
-      {
-        path: 'aboutUs',
-        component: AboutUsComponent,
-      },
-      {
-        path: 'blog',
-        component: BlogComponent,
-      },
-    ]),
+    RouterModule.forRoot(
+      [
+        { path: '', component: ProductListComponent },
+        {
+          path: 'products/:productId',
+          component: ProductDetailsComponent,
+        },
+        {
+          path: 'cart',
+          component: CartComponent,
+        },
+        {
+          path: 'aboutUs',
+          component: AboutUsComponent,
+        },
+        {
+          path: 'blog',
+          component: BlogComponent,
+        },
+      ],
+      { anchorScrolling: 'enabled' }
+    ),
   ],
   declarations: [
     AboutUsComponent,

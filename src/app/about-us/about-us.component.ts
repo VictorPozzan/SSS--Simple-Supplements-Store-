@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-about-us',
@@ -8,11 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class AboutUsComponent implements OnInit {
   learnMore: boolean = false;
 
-  constructor() {}
+  constructor(private scroller: ViewportScroller) {}
 
   ngOnInit() {}
 
   learnMoreAction() {
     this.learnMore = !this.learnMore;
+    this.goScrollMore();
+  }
+
+  goScrollMore() {
+    this.learnMore === true
+      ? this.scroller.scrollToAnchor('targetMore')
+      : this.scroller.scrollToAnchor('targetLess');
   }
 }
