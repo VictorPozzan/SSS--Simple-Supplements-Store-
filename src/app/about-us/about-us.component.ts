@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.css'],
 })
 export class AboutUsComponent implements OnInit {
+  learnMore: boolean = false;
+
   constructor() {}
 
   ngOnInit() {}
+
+  learnMoreAction() {
+    this.learnMore = !this.learnMore;
+  }
 }

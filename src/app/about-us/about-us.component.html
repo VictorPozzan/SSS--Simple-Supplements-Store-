@@ -1,5 +1,10 @@
 <div class="row">
-  <div class="column"></div>
+  <div class="column">
+    <img
+      src="https://stackblitz.com/files/angular-ivy-b73e62/github/VictorPozzan/SSS--Simple-Supplements-Store-/master/src/assets/images/paint-about-image.png"
+      alt=""
+    />
+  </div>
   <div class="column card-text">
     <div class="title">About us!</div>
     <div class="line-green"></div>
@@ -16,24 +21,30 @@
       goals. That's why we've curated a selection of supplements and wellness
       products that are simple, straightforward, and backed by science.
     </p>
+    <button (click)="learnMoreAction()">LEARN MORE</button>
   </div>
 </div>
 
-<p>
-  At Simple Supplement Store, we're passionate about health and wellness, and we
-  believe that everyone deserves access to the best products to support their
-  journey towards optimal health. Whether you're looking to boost your immune
-  system, improve your digestion, or enhance your performance, we've got you
-  covered.
-</p>
-<p>
-  Our team of experts is committed to helping you find the right supplements and
-  wellness products to fit your individual needs. We offer personalized
-  recommendations and advice to ensure that you're getting the most out of your
-  purchases.
-</p>
-<p>
-  Thank you for choosing Simple Supplement Store as your go-to destination for
-  all your health and wellness needs. We look forward to helping you achieve
-  your health goals and living your best life.
-</p>
+<div *ngIf="learnMore === true" class="row">
+  <div class="column">
+    <div class="title">Our mission</div>
+    <div class="line-green"></div>
+    <p class="section-text margin-text">
+      At Simple Supplement Store, we're passionate about health and wellness,
+      and we believe that everyone deserves access to the best products to
+      support their journey towards optimal health. Whether you're looking to
+      boost your immune system, improve your digestion, or enhance your
+      performance, we've got you covered.
+    </p>
+
+    <p class="section-text font-weigth">
+      Our team of experts is committed to helping you find the right supplements
+      and wellness products to fit your individual needs. We offer personalized
+      recommendations and advice to ensure that you're getting the most out of
+      your purchases. Thank you for choosing Simple Supplement Store as your
+      go-to destination for all your health and wellness needs. We look forward
+      to helping you achieve your health goals and living your best life.
+    </p>
+  </div>
+  <div class="column card-text"></div>
+</div>
