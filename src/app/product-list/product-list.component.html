@@ -14,20 +14,16 @@
         </a>
         <p *ngIf="product.description">{{ product.description }}</p>
       </div>
-      <div class="productPrice">
-        <b>$ {{ product.price }}</b>
-      </div>
     </div>
-    <div class="foot-card">
-      <div>
-        <button (click)="addToCart(product)" class="item-foot">
-          <i class="material-icons" id="icon">shopping_cart</i>Add to cart
-        </button>
-      </div>
-      <div>
-        <app-product-alerts [product]="product" (notify)="onNotify()">
-        </app-product-alerts>
-      </div>
+    <div class="footer-card">
+      <span class="productPrice">$ {{ product.price }}</span>
+      <button (click)="addToCart(product)" class="button-cart">
+        Add to cart
+      </button>
+    </div>
+    <div>
+      <app-product-alerts [product]="product" (notify)="onNotify()">
+      </app-product-alerts>
     </div>
   </div>
 </div>

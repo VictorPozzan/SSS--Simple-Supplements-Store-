@@ -53,10 +53,6 @@ can be found in the LICENSE file at https://angular.io/license
   background-color: #03784d;
 }
 
-#icon {
-  color: #f0f0f0;
-}
-
 .productInfo {
   margin-top: 12px;
   display: flex;
@@ -69,7 +65,23 @@ can be found in the LICENSE file at https://angular.io/license
 }
 
 .productPrice {
-  width: 20%;
-  text-align: center;
   color: #013623;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-cart {
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  background-color: #03784d;
+  text-align: center;
 }
