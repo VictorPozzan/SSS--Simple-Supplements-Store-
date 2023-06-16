@@ -16,9 +16,11 @@ can be found in the LICENSE file at https://angular.io/license
   margin: 12px;
   width: 321px;
   height: 321px;
-  border-radius: 25px;
-  border: 2px solid #0d1519;
   padding: 20px;
+  border-radius: 24px;
+  border-width: 8px;
+  border-color: black;
+  box-shadow: 1px 2px 11px 1px rgba(0, 0, 0, 0.2);
 }
 
 .productTitle {
