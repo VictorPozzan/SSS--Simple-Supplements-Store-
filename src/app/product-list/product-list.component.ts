@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { products } from '../products';
 import { CartService } from '../cart.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-product-list',
@@ -10,7 +11,10 @@ import { CartService } from '../cart.service';
 export class ProductListComponent {
   products = products;
 
-  constructor(private cartService: CartService) {}
+  constructor(
+    private cartService: CartService,
+    private snackBar: MatSnackBar
+  ) {}
 
   onNotify() {
     window.alert('You will be notified when the product is on sale');
@@ -18,6 +22,12 @@ export class ProductListComponent {
 
   addToCart(product) {
     this.cartService.addToCart(product);
+
+    this.snackBar.open('teste', 'ok', {
+      duration: 222220,
+      verticalPosition: 'top', // Allowed values are  'top' | 'bottom'
+      horizontalPosition: 'center', // Allowed values are 'start' | 'center' | 'end' | 'left' | 'right'
+    });
   }
 }
 

@@ -14,12 +14,16 @@ import { HeaderNav } from './header-nav/header-nav.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
+import { MaterialModule } from './material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports: [
     BrowserModule,
     HttpClientModule,
     ReactiveFormsModule,
+    MaterialModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(
       [
         { path: '', component: ProductListComponent },
@@ -56,6 +60,7 @@ import { BlogComponent } from './blog/blog.component';
   ],
   bootstrap: [AppComponent],
   providers: [CartService, BlogService],
+  exports: [ProductListComponent],
 })
 export class AppModule {}
 
