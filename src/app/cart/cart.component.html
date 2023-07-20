@@ -1,30 +1,22 @@
-<h3> Carrinho </h3>
-
-<p>
-  <a routerLink="/shipping">Shipping Prices</a>
-</p>
+<h3>Shopping cart</h3>
 
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
-
 </div>
 
-<h4>Total a pagar: ${{ total }}</h4>
+<h4>Total: ${{ total }}</h4>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
   <div>
-    <label for="name"> Nome </label>
-    <input id="name" type="text" formControlName="name">
+    <label for="name"> Name </label>
+    <input id="name" type="text" formControlName="name" />
   </div>
 
   <div for="address">
-    <label> Endereço </label>
-    <input id="address" type="text" formControlName="address">
+    <label> Address </label>
+    <input id="address" type="text" formControlName="address" />
   </div>
 
-
-
-  <button class="button" type="submit">Comprar</button>
-
+  <button class="button" type="submit">Buy</button>
 </form>

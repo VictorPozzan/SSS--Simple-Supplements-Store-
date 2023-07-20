@@ -18,7 +18,6 @@ export class ProductListComponent {
 
   addToCart(product) {
     this.cartService.addToCart(product);
-    window.alert('Item add');
   }
 }
 
