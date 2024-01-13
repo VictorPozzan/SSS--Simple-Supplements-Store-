@@ -17,13 +17,13 @@
     </div>
     <div class="footer-card">
       <span class="productPrice">$ {{ product.price }}</span>
+      <div>
+        <app-product-alerts [product]="product" (notify)="onNotify()">
+        </app-product-alerts>
+      </div>
       <button (click)="addToCart(product)" class="button-cart">
         Add to cart
       </button>
-    </div>
-    <div>
-      <app-product-alerts [product]="product" (notify)="onNotify()">
-      </app-product-alerts>
     </div>
   </div>
 </div>
