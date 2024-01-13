@@ -1,12 +1,18 @@
-<h2>Detalhes do Produto</h2>
-
-<div *ngIf="product">
-  <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
-  <p>{{ product.description }}</p>
-
-  <button (click)="addToCart(product)">Add cart</button>
-  <button (click)="share()" class="item-foot">
-    <i class="material-icons" id="icon">share</i>
-  </button>
+<div class="session-product-details">
+  <div class="product-datails-card" *ngIf="product">
+    <div class="showcase">
+      <div>
+        <h3>{{ product.name }}</h3>
+        <h4>{{ product.price | currency }}</h4>
+        <p>{{ product.description }}</p>
+      </div>
+      <div class="productImage">
+        <img [src]="product.image" class="center" />
+      </div>
+      <button (click)="addToCart(product)">Add cart</button>
+      <button (click)="share()" class="item-foot">
+        <i class="material-icons" id="icon">share</i>
+      </button>
+    </div>
+  </div>
 </div>

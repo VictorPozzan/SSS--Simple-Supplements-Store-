@@ -1,0 +1,28 @@
+.session-product-details {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.product-datails-card{
+  margin: 48px;
+  min-width: 80vw;
+  height: 30vw;
+  border-width: 8px;
+  border-color: black;
+  border-radius: 10px;
+  box-shadow: 1px 2px 11px 1px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.showcase{
+  display: table;
+  width: 100%;
+  margin: 20px 0;
+}
