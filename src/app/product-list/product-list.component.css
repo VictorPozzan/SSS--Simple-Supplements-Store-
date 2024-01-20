@@ -21,6 +21,7 @@ can be found in the LICENSE file at https://angular.io/license
   border-width: 8px;
   border-color: black;
   box-shadow: 1px 2px 11px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .productTitle {

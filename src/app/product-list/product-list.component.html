@@ -1,17 +1,17 @@
 <div class="card-data">
-  <div *ngFor="let product of products" class="card">
+  <div
+    *ngFor="let product of products"
+    class="card"
+    (click)="viewDetails(product)"
+    >
     <div class="productImage">
       <img [src]="product.image" class="center" />
     </div>
     <div class="productInfo">
       <div class="productHeader">
-        <a
-          class="productTitle"
-          [title]="product.name + ' detalhes '"
-          [routerLink]="['/products', product.id]"
-        >
+        <div class="productTitle" [title]="product.name + ' detalhes '">
           {{ product.name }}
-        </a>
+        </div>
         <p *ngIf="product.description">{{ product.description }}</p>
       </div>
     </div>
@@ -21,7 +21,7 @@
         <app-product-alerts [product]="product" (notify)="onNotify()">
         </app-product-alerts>
       </div>
-      <button (click)="addToCart(product)" class="button-cart">
+      <button (click)="addToCart($event, product)" class="button-cart">
         Add to cart
       </button>
     </div>

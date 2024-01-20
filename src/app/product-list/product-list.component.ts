@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { products } from '../products';
 import { CartService } from '../cart.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
@@ -13,20 +14,27 @@ export class ProductListComponent {
 
   constructor(
     private cartService: CartService,
-    private snackBar: MatSnackBar
+    private snackBar: MatSnackBar,
+    private router: Router
   ) {}
 
   onNotify() {
     window.alert('You will be notified when the product is on sale');
   }
 
-  addToCart(product) {
+  viewDetails(product) {
+    this.router.navigate(['/products', product.id]);
+  }
+
+  addToCart(event: Event, product) {
+    event.preventDefault();
+    event.stopPropagation();
     this.cartService.addToCart(product);
 
     this.snackBar.open('teste', 'ok', {
       duration: 222220,
-      verticalPosition: 'top', // Allowed values are  'top' | 'bottom'
-      horizontalPosition: 'center', // Allowed values are 'start' | 'center' | 'end' | 'left' | 'right'
+      verticalPosition: 'top',
+      horizontalPosition: 'center',
     });
   }
 }
