@@ -5,14 +5,16 @@
     </div>
     <div class="showcase">
       <div>
-        <h3>{{ product.name }}</h3>
-        <h4>{{ product.price | currency }}</h4>
+        <h3 class="product-name">{{ product.name }}</h3>
+        <div class="product-price">{{ product.price | currency }}</div>
         <p>{{ product.description }}</p>
       </div>
+      <div class="actions-buttons">
       <button (click)="addToCart(product)">Add cart</button>
       <button (click)="share()" class="item-foot">
         <i class="material-icons" id="icon">share</i>
       </button>
+      </div>
     </div>
   </div>
 </div>
