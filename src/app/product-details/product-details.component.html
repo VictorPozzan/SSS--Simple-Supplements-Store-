@@ -6,7 +6,7 @@
     <div class="showcase">
       <div>
         <h3 class="product-name">{{ product.name }}</h3>
-        <div class="product-price">{{ product.price | currency }}</div>
+        <tag-inclined tagName="{{ product.price | currency }}"></tag-inclined>
         <p>{{ product.description }}</p>
       </div>
       <div class="actions-buttons">

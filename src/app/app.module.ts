@@ -16,6 +16,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { BlogComponent } from './blog/blog.component';
 import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TagInclinedComponent } from './components/tag-inclined/tag-inclined.component';
 
 @NgModule({
   imports: [
@@ -57,6 +58,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ProductListComponent,
     ProductDetailsComponent,
     TopBarComponent,
+    TagInclinedComponent,
   ],
   bootstrap: [AppComponent],
   providers: [CartService, BlogService],
