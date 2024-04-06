@@ -1,14 +1,8 @@
-<a [routerLink]="['/']">
-  <i class="material-icons" style="color: #f0f0f0">home</i>
-</a>
-<div class="titleSSS">
-  <h1>SSS</h1>
+<div [routerLink]="['/']" class="titleSSS home">
   <h2>Simple Suplement Store</h2>
 </div>
 <a routerLink="/cart" class="button fancy-button" style="color: #52b376"
-  ><i class="material-icons" style="color: #52b376; padding-right: 12px;"
-    >shopping_cart</i
-  >Cart
+  ><i class="material-icons" style="color: #52b376;">shopping_cart</i>
   <span class="badge">{{ numberCart }}</span>
 </a>
 
